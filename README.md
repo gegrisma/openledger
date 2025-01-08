@@ -4,7 +4,7 @@
 ```
 wget -q0- https://raw.githubusercontent.com/gegrisma/openledger/refs/heads/main/openledger.sh | bash
 ```
-3) Setelah login xrdp buka command prompt di xrdpnya lalu ketik
+2) Setelah login xrdp buka command prompt di xrdpnya lalu ketik
 ```
 openledger-node --no-sandbox
 ```
