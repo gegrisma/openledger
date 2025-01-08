@@ -1,4 +1,4 @@
-# Openledger buat ubuntu versi 22
+# Openledger buat ubuntu versi 22.04 & 24.04
 
 1) Eksekusi
 ```
