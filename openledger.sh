@@ -31,7 +31,7 @@ function busek() {
 
 while true; do
     echo "========================"
-    echo "Instalisasi OpenLedger"
+    echo "Instalisasi OpenLedger 1.0.0"
     echo "Pilih bos :"
     echo "1. Install"
     echo "2. Hapus Instalasi"
