@@ -21,6 +21,13 @@ function pasang() {
     echo "✅ Selesai. tinggal login di rdp dengan user root mu"
 }
 
+function perbaiki() {
+    echo "Memperbaiki..."
+    echo startxfce4 > ~/.xsession || true
+    sudo systemctl restart xrdp || true
+    echo "Selesai."
+}
+
 function busek() {
     echo "Menghapus..."
     sudo apt remove -y openledger-node || true
@@ -34,14 +41,16 @@ while true; do
     echo "Instalisasi OpenLedger 1.0.0"
     echo "Pilih bos :"
     echo "1. Install"
-    echo "2. Hapus Instalasi"
-    echo "3. Keluar"
+    echo "2. Fix error di ubuntu 24.04" 
+    echo "3. Hapus OpenLedger 1.0.0"
+    echo "4. Keluar"
     read -p "Pilih menu: " mileh
 
     case $mileh in
         1) pasang ;;
-        2) busek ;;
-        3) echo "Keluar..."; break ;;
+        2) perbaiki ;;
+        3) busek ;;
+        4) echo "Keluar..."; break ;;
         *) echo "Waduh." ;;
     esac
 done
